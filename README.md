@@ -1,78 +1,199 @@
-# Edge-Detection
+# Edge-Detection...
+
 ## Aim:
+
 To perform edge detection using Sobel, Laplacian, and Canny edge detectors.
 
 ## Software Required:
-Anaconda - Python 3.7
+
+Anaconda - Python 3.7 .
 
 ## Algorithm:
-### Step1:
-<br>
 
+### Step 1:
 
-### Step2:
-<br>
+Import the required packages for further process.
 
-### Step3:
-<br>
+### Step 2:
 
-### Step4:
-<br>
+Read the image and convert the bgr image to gray scale image.
 
-### Step5:
-<br>
+### Step 3:
 
+Use any filters for smoothing the image to reduse the noise.
+
+### Step 4:
+
+Apply the respective filters -Sobel,Laplacian edge dectector and Canny edge dector.
+
+### Step 5:
+
+Display the filtered image using plot and imshow.
+ 
  
 ## Program:
 
-``` Python
-# Import the packages
+```python 
 
+# Import the packages and load the image, Convert to grayscale and remove noise:
 
-# Load the image, Convert to grayscale and remove noise
-
-
-
-# SOBEL EDGE DETECTOR
-
-
-
-# LAPLACIAN EDGE DETECTOR
-
-
-
-# CANNY EDGE DETECTOR
-
-
-
+import cv2
+import matplotlib.pyplot as plt
+image = cv2.imread("alaskan.jpg")
+plt.imshow(image)
+gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+new_image = cv2.GaussianBlur(gray_image,(3,3),0)
 
 ```
+
+```python
+
+# SOBEL EDGE DETECTOR:
+
+# SOBEL-X:
+
+import cv2
+import matplotlib.pyplot as plt
+image=cv2.imread("alaskan.jpg")
+gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+img=cv2.GaussianBlur(gray_img,(3,3),0)
+sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
+plt.figure(figsize=(16,16))
+plt.subplot(1,2,1)
+plt.imshow(img,cmap='gray')
+plt.title('Gray')
+plt.subplot(1,2,2)
+plt.imshow(sobelx,cmap='gray')
+plt.title("Sobel-X")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+
+```
+
+```python
+
+# SOBEL-Y:
+
+import cv2
+import matplotlib.pyplot as plt
+image=cv2.imread("alaskan.jpg")
+gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+img=cv2.GaussianBlur(gray_img,(3,3),0)
+sobely=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+plt.figure(figsize=(16,16))
+plt.subplot(1,2,1)
+plt.imshow(img,cmap='gray')
+plt.title('Gray')
+plt.subplot(1,2,2)
+plt.imshow(sobely,cmap='gray')
+plt.title("Sobel-Y")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+
+```
+
+```python
+
+# SOBEL-XY:
+
+import cv2
+import matplotlib.pyplot as plt
+image=cv2.imread("alaskan.jpg")
+gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+img=cv2.GaussianBlur(gray_img,(3,3),0)
+sobelxy=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+plt.figure(figsize=(16,16))
+plt.subplot(1,2,1)
+plt.imshow(img,cmap='gray')
+plt.title('Gray')
+plt.subplot(1,2,2)
+plt.imshow(sobelxy,cmap='gray')
+plt.title("Sobel-XY")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+
+```
+
+```python
+
+# LAPLACIAN EDGE DETECTOR:
+
+import cv2
+import matplotlib.pyplot as plt
+image=cv2.imread("alaskan.jpg")
+gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+img=cv2.GaussianBlur(gray_img,(3,3),0)
+laplacian = cv2.Laplacian(img,cv2.CV_64F)
+plt.figure(figsize=(16,16))
+plt.subplot(1,2,1)
+plt.imshow(img,cmap='Blues')
+plt.title('Gray')
+plt.subplot(1,2,2)
+plt.imshow(laplacian,cmap='Blues')
+plt.title("Laplacian")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+
+```
+
+```python 
+
+# CANNY EDGE DETECTOR:
+
+import cv2
+import matplotlib.pyplot as plt
+image=cv2.imread("alaskan.jpg")
+gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+img=cv2.GaussianBlur(gray_img,(3,3),0)
+canny_edges = cv2.Canny(image, 120, 150)
+plt.figure(figsize=(16,16))
+plt.subplot(1,2,1)
+plt.imshow(img,cmap='gray')
+plt.title('Gray')
+plt.subplot(1,2,2)
+plt.imshow(canny_edges,cmap='gray')
+plt.title("Canny_edges")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+
+```
+
+
 ## Output:
-### SOBEL EDGE DETECTOR
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
+### INPUT IMAGE:
 
-### LAPLACIAN EDGE DETECTOR
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![out1](https://user-images.githubusercontent.com/93427534/232227951-4bd6ecaa-3482-46cc-9544-a752d5ab6037.png)
 
+### SOBEL EDGE DETECTOR:
 
-### CANNY EDGE DETECTOR
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### SOBEL-X:
+
+![out2](https://user-images.githubusercontent.com/93427534/232227955-ddfa8bda-8474-45cf-b3f0-f49305f8226a.png)
+
+### SOBEL-Y:
+
+![out3](https://user-images.githubusercontent.com/93427534/232227958-e37259fd-c754-4e32-8750-3ca50cafe8d9.png)
+
+### SOBEL-XY:
+
+![out4](https://user-images.githubusercontent.com/93427534/232227962-905659b3-8f51-4117-8b3a-98517e5bfc1b.png)
+
+### LAPLACIAN EDGE DETECTOR:
+
+![out5](https://user-images.githubusercontent.com/93427534/232227967-c041bfcd-5a4d-4871-b90f-e13b183fc402.png)
+
+### CANNY EDGE DETECTOR:
+
+![out6](https://user-images.githubusercontent.com/93427534/232227970-a0fc862c-acdd-46a3-9de6-8c68b7b4e0d7.png)
 
 ## Result:
+
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
+
+

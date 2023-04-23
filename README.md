@@ -32,6 +32,8 @@ Display the filtered image using plot and imshow.
  
  
 ## Program:
+Developed by: Gunaseelan G
+Register no : 212221230031
 
 ```python 
 
@@ -168,29 +170,34 @@ plt.show()
 
 ### INPUT IMAGE:
 
-![out1](https://user-images.githubusercontent.com/93427534/232227951-4bd6ecaa-3482-46cc-9544-a752d5ab6037.png)
+![m5](https://user-images.githubusercontent.com/93427255/233850911-7c6c4712-b165-4c5a-a5a7-ef3cb31b0bd4.jpg)
+
 
 ### SOBEL EDGE DETECTOR:
 
 ### SOBEL-X:
+![out2](https://user-images.githubusercontent.com/93427255/233850917-f02c4b3c-9aac-46c0-a80b-b93321e361ca.png)
 
-![out2](https://user-images.githubusercontent.com/93427534/232227955-ddfa8bda-8474-45cf-b3f0-f49305f8226a.png)
 
 ### SOBEL-Y:
 
-![out3](https://user-images.githubusercontent.com/93427534/232227958-e37259fd-c754-4e32-8750-3ca50cafe8d9.png)
+![out3](https://user-images.githubusercontent.com/93427255/233850929-892f9819-0434-4d77-aea5-237dbea8cc88.png)
+
 
 ### SOBEL-XY:
 
-![out4](https://user-images.githubusercontent.com/93427534/232227962-905659b3-8f51-4117-8b3a-98517e5bfc1b.png)
+![out4](https://user-images.githubusercontent.com/93427255/233850936-46aed98c-a91b-4870-a64f-fe12efe1ab1b.png)
+
 
 ### LAPLACIAN EDGE DETECTOR:
 
-![out5](https://user-images.githubusercontent.com/93427534/232227967-c041bfcd-5a4d-4871-b90f-e13b183fc402.png)
+![out5](https://user-images.githubusercontent.com/93427255/233850945-58765493-8ebb-4f93-8543-6a5ea05c393f.png)
+
 
 ### CANNY EDGE DETECTOR:
 
-![out6](https://user-images.githubusercontent.com/93427534/232227970-a0fc862c-acdd-46a3-9de6-8c68b7b4e0d7.png)
+![out6](https://user-images.githubusercontent.com/93427255/233850956-1330e35e-592f-455c-ae62-d52b3a431ff6.png)
+
 
 ## Result:
 

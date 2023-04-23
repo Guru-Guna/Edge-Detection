@@ -33,6 +33,7 @@ Display the filtered image using plot and imshow.
  
 ## Program:
 Developed by: Gunaseelan G
+
 Register no : 212221230031
 
 ```python 
